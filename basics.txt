@@ -1,0 +1,61 @@
+regiseration:
+    1- signup 
+        - name
+        - phon number
+        - email
+        - password
+        * verification code: 4 digits
+    2- login
+        - email
+        - password
+    3- forgret password
+        - email
+        - new password
+models: -Done
+    1- book 
+        - name
+        - image
+        - auther
+        - rate
+        - date
+        - description
+        - price
+        - is_active
+        - category
+    2- address
+        - city
+        - street
+        - nearby
+        - phon number
+    3- purchases
+        - user
+        - book
+        - is_purchased
+    4- order
+        - user
+        - book
+        - address
+    5- category
+        - name
+        - description
+    6- city
+        - name
+        - country
+        
+endpoints:
+    - auth:
+        1- signup -Done
+        2- login -Done
+        3- foret password -Done
+    - info:
+        1- return the all books -Done
+        2- return specific book and it  info -Done
+        3- return book by category -Done
+        4- add to cart -Done
+        5- return the books in cart and total price -Done
+        6- create order to cart -Done
+        7- create order for one book -Done
+        7- delete from cart -Done
+
+
+
