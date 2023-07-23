@@ -29,7 +29,7 @@ def get_my_address(user, order_book_in):
 
 @readify_router.get('/get_all', response={
     200: BooksOut
-}, auth=AuthBearer())
+})
 def get_all(request):
     books = Book.objects.all()
 

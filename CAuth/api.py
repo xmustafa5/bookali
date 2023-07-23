@@ -90,7 +90,7 @@ def login(request, login_in: LoginIn):
         return status.HTTP_200_OK, {'email': user.email, 'token': token}
     return status.HTTP_401_UNAUTHORIZED, {'detail': 'user is not active'}
 
-
+    
 @auth_router.post('/forget_password', response={
   404: Four0FourOut,
   200: Four0FourOut,

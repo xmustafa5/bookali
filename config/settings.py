@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'corsheaders',
     'django_extensions',
     'readify',
     'CAuth',
@@ -56,7 +56,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'silk.middleware.SilkyMiddleware',
 ]
-
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = [
+    'http://127.0.0.1:3000/',
+    'http://127.0.0.1:3001/',
+    'http://127.0.0.1:3002/',
+]
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
